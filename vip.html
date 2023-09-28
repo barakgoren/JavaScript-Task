@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT' crossorigin='anonymous'>
+  <title>Document</title>
+  <style>
+    .item {
+      padding: 10px;
+      position: relative !important;
+      z-index: 2 !important;
+      background-color: aliceblue;
+      height: 113px;
+      overflow: hidden;
+    }
+    .item:hover {
+      background-color: lightblue !important;
+      transition: background-color 0.2s;
+      color: white !important;
+    }
+
+    .item img {
+      border-radius: 100px;
+      height: 90px;
+      width: 90px !important;
+    }
+    .rate {
+      justify-content: center;
+      text-align: center;
+      padding-top: 13px;
+      padding-right: 10px;
+      padding-left: 10px;
+      font-size: 55px !important;
+    }
+    .info {
+      margin-top: -35px;
+      position: relative !important;
+      z-index: 1 !important;
+      overflow: hidden;
+      height: 10px;
+    }
+
+    .infoAnim {
+      animation: moveDown 1s normal forwards;
+    }
+    
+    .infoAnimReverse {
+      animation: moveUp 0.2s reverse;
+    }
+
+    @keyframes moveDown {
+      to {
+        height: 300px;
+        overflow: scroll;
+      }
+    }
+
+    @keyframes moveUp {
+      to {
+        height: 300px;
+      }
+    }
+
+    
+  </style>
+  <script defer src="js_vip/appVip.js"></script>
+  <script src="js_vip/vipClass.js"></script>
+  <script src="js_vip/vipJson.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center p-2 fw-bold">List of VIP</h1>
+    <div id="id_row" class="row">
+      <!-- <div class="item border-2 rounded border-info col-md-6 border">
+        <div class="rate float-start h1">1</div>
+        <img src="https://specials-images.forbesimg.com/imageserve/59d502f931358e542c034e76/200x200.jpg?background=000000&cropX1=245&cropX2=2420&cropY1=636&cropY2=2813" class="w-25 float-start me-2">
+        <h2>Koko akof</h2>
+        <div>Money: 40000 bananas</div>
+        <div class="row justify-content-between">
+          <p class="p-0 col-6">Company: Zoo</p>
+          <p class="col-4 ps-4 text-end" style="color:gray">read more</p>
+        </div>
+        <div class="info row h-100 mt-4">
+          <div class="">Some information...</div>
+        </div>
+      </div> -->
+      
+    </div>
+  </div>
+</body>
+</html>
